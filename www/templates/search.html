@@ -1,0 +1,16 @@
+<ion-view view-title="Buscar Pokémon">
+  <ion-content class="buscar">
+  	<br><br>
+    <center>
+		<h2> Ingresa el nombre </h2>
+		<br>
+		<h3 class="buscar"> BUSCAR </h3>
+		<input type="text" ng-model="Nombre">
+		<br><br><br><br><br>
+		<div ng-repeat="x in Producto | filter:Nombre">
+			<img src="{{x.Imag}}" width="300px" height="200px" class="img-responsive">
+			<p class="lcm">{{x.Pro}}</p>
+		</div>
+	</center>
+  </ion-content>
+</ion-view>
